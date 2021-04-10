@@ -26,6 +26,11 @@ public class Lang {
     public static Map<Class<?>, MyField[]> FIELD_MAP = new HashMap<>(1024);
 
     /**
+     * 对象工厂
+     */
+    private static ObjectFactory objectFactory = new ObjectFactory();
+
+    /**
      * 获取类上的指定注解
      *
      * @param clazz
@@ -141,6 +146,14 @@ public class Lang {
         }
         return type;
 
+    }
+
+    public static Object createObject(Class<?> enhanceClazz) {
+        try {
+            return objectFactory.buildBean(enhanceClazz);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public enum ClassType {

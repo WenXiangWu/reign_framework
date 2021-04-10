@@ -2,180 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1766affc-37a8-41f9-b4e0-8ed617ab2ca5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_5_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_0_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_23_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_23_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/Lang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/ReflectUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/Tuple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/AbstractJdbcExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/BasicRowProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/BeanProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/DbUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/JdbcCglibProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/JdbcExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/SqlFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/async/AsyncCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/async/AsyncManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/async/DbAsyncCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/async/DefaultAsyncCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/handlers/ArrayHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/handlers/ArrayListHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/handlers/BeanHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/handlers/BeanListHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/handlers/MapListHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/BinaryModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/ComplexIdEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/DefaultIndexEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/IDynamicUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/IndexEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/Async.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/AsyncMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/DynamicUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/Id.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/IgnoreField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/Index.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/IngoreField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/InsertIgnoreField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/JdbcEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/NoCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/asm/ASMClassAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/asm/ASMClassConstructorMethodAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/asm/ASMClassLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/asm/ASMClassMethodAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/asm/ASMDomainGetMethodAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/asm/JdbcModelEnhancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/asm/util/ASMUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/AbstractTransCallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/BaseJdbcExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheItemType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheJdbcExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CommonJdbcExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/TransCallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/page/PagingData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/DefaultJdbcSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/DefaultJdbcSessionTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/JdbcTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/JdbcTransactionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/TransactionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/util/JdbcUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/sql/Sql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/sql/Sqls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/sql/sql.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/LogLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/LogMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/MonitorEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/MonitorMetricEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/AbstractDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/AbstractLockableDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/MemoryTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/index/MultiBtreeIndexManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/sequence/ISequenceDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/sequence/Sequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/sequence/SequenceDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/msgpack/MsgPackResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/msgpack/MsgPackUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/msgpack/MsgPackView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/msgpack/ProtoMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/msgpack/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/msgpack/ResponseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/msgpack/ResponseComm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/msgpack/ResponseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/MessageFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/Scans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/XML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/AbstractReadWriteCacheRegionAccessStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/AccessType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheRegion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheRegionAccessStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/LockItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/AbstractEhCacheReadWriteRegion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheReadWriteRegion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheReadWriteRegionAccessStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhcacheManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhcacheReadWriteCollectionRegion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheReadWriteCollectionRegion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheReadWriteCollectionRegionAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheReadWriteRegion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheReadWriteRegionAccessStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/AbstractLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/TransLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/TransLoggerManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory-db.iml" beforeDir="false" afterPath="$PROJECT_DIR$/memory-db.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/Lang.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/OrderedRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/OrderedRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/OrderedThreadPoolExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/OrderedThreadPoolExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/concurrent/ConcurrencyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/ConcurrencyUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/concurrent/LockType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/LockType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/concurrent/ReadWriteLockItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/ReadWriteLockItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/concurrent/StripedReadWriteLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/StripedReadWriteLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/concurrent/cache/ReadWriteLockSync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/cache/ReadWriteLockSync.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/concurrent/cache/StripedReadWriteLockSync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/cache/StripedReadWriteLockSync.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/concurrent/cache/组件来源" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/cache/组件来源" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/common/concurrent/分段锁和分离锁" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/分段锁和分离锁" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/DefaultNameStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/DefaultNameStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/NameStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/NameStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/Param.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/Param.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/Params.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/Params.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/ResultSetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/ResultSetHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/RowProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/RowProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/SqlBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/SqlBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/SqlFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/async/SqlFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/async/SqlFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/handlers/AbstractListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/handlers/AbstractListHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/handlers/ColumnListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/handlers/ColumnListHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/IBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/IBaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/IDynamicUpdate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/IdEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/IdEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/IndexEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/JdbcCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcCallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/JdbcEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/JdbcFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/JdbcField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/JdbcModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/JdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/annotation/AutoGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/AutoGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/cache/CacheManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/cache/ComplexIdEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/orm/cache/SingleIdEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/SingleIdEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/jdbc/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/util/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/log/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/AbstractDomain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/AbstractLockableDomain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/AsyncDBExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/AsyncDBExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/AsyncOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/annotation/AsyncOp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/BPlusTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/BPlusTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/BaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/BaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/BaseManagerWithLongType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/BaseManagerWithLongType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/InternalLoggerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/InternalLoggerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/Matcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/Matcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/MemoryDBMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/MemoryDBMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/MemoryTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/MultiBPlusTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/MultiBPlusTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/SQLEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/SQLEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/SqlExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/SqlExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/annotation/AutoId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/annotation/AutoId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/annotation/BTreeIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/annotation/BTreeIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/annotation/BTreeIndexs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/annotation/BTreeIndexs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/annotation/SyncDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/annotation/SyncDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/index/BTreeIndexManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/index/BTreeIndexManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/index/IndexManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/index/IndexManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/index/IndexManagerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/memorydb/index/IndexManagerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/index/MultiBtreeIndexManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/sequence/ISequenceDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/sequence/Sequence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/sequence/SequenceDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/standardthread/Executeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/standardthread/Executeable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/standardthread/StandardRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/standardthread/StandardRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/standardthread/StandardThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/standardthread/StandardThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/memorydb/standardthread/ThreadInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/concurrent/standardthread/ThreadInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reign_framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/reign_framework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/Lang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/common/Lang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/AbstractTransCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/AbstractTransCallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/BaseJdbcExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/BaseJdbcExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheItemType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheItemType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/TransCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/TransCallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/DefaultJdbcSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/DefaultJdbcSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/DefaultJdbcSessionTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/DefaultJdbcSessionTrigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionTrigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/JdbcTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/JdbcTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/JdbcTransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/JdbcTransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/TransactionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/TransactionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reign/framework/log/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -186,30 +73,77 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/log/AbstractLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="184">
+              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+              <folding>
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#1975#1976#0" expanded="true" />
+                <element signature="e#2002#2003#0" expanded="true" />
+                <element signature="e#2070#2071#0" expanded="true" />
+                <element signature="e#2098#2099#0" expanded="true" />
+                <element signature="e#2150#2151#0" expanded="true" />
+                <element signature="e#2178#2179#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/asm/JdbcModelEnhancer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/AbstractJdbcExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="274">
+              <caret line="178" column="35" selection-start-line="178" selection-start-column="35" selection-end-line="178" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/BaseDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1173">
+              <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1150">
+              <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>memory-db</find>
+      <find>创建一个</find>
+      <find>getFa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,7 +152,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/AccessType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionTrigger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/JdbcSessionUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/DefaultJdbcSessionTrigger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/TransactionListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/common/ObjectFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/common/Lang.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/MessageFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/DefaultJdbcSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/JdbcTransaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/JdbcTransactionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/TransCallBack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/AbstractTransCallBack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheItemType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheEntry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/BaseJdbcExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheRegion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheRegionAccessStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/LockItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/Cache.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/AbstractReadWriteCacheRegionAccessStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheReadWriteRegionAccessStrategy.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/AbstractEhCacheReadWriteRegion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/log/Logger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhcacheCacheFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheStatistics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheReadWriteRegion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhcacheManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhcacheReadWriteCollectionRegion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheReadWriteRegionAccessStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheCacheFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/XML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/Scans.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/log/AbstractLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/log/TransLoggerManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/log/TransLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/BaseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/AbstractJdbcExtractor.java" />
       </list>
     </option>
   </component>
@@ -229,12 +213,16 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="216" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="60" />
+    <option name="y" value="44" />
     <option name="width" value="1610" />
-    <option name="height" value="1047" />
+    <option name="height" value="964" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -282,6 +270,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reign_framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reign_framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reign_framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reign_framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
               <item name="jdbc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -303,7 +310,33 @@
               <item name="framework" type="462c0819:PsiDirectoryNode" />
               <item name="jdbc" type="462c0819:PsiDirectoryNode" />
               <item name="orm" type="462c0819:PsiDirectoryNode" />
-              <item name="asm" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reign_framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reign_framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="orm" type="462c0819:PsiDirectoryNode" />
+              <item name="session" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reign_framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reign_framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reign_framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reign_framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -314,11 +347,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1617877657528" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618050146724" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
@@ -334,6 +367,9 @@
       </list>
     </option>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -344,75 +380,620 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617877557662</updated>
-      <workItem from="1617877560566" duration="64000" />
+      <workItem from="1617877560566" duration="31573000" />
+      <workItem from="1618050219327" duration="122000" />
+      <workItem from="1618050400715" duration="78000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64000" />
+    <option name="totallyTimeSpent" value="31773000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="216" y="0" width="1610" height="1047" extended-state="0" />
+    <frame x="60" y="44" width="1610" height="964" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="JRebel" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24967742" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
+      <window_info id="JRebel" order="0" side_tool="true" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.21612903" />
+      <window_info id="Learn" order="7" weight="0.32995737" />
+      <window_info id="Structure" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850778" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="ASM" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32945737" />
+      <window_info anchor="bottom" id="JRebel Executor" order="13" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="ASM" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info id="JRebel" order="0" side_tool="true" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.21108742" />
+      <window_info id="Learn" order="7" weight="0.32995737" />
+      <window_info id="Structure" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32945737" />
+      <window_info anchor="bottom" id="JRebel Executor" order="6" />
+      <window_info anchor="bottom" id="JRebel Console" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32850778" />
+      <window_info anchor="bottom" id="Run" order="10" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="ASM" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/ComplexIdEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="-598">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/asm/JdbcModelEnhancer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/DefaultIndexEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1150">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CommonJdbcExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/TransCallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheItemType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/ReflectUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/AbstractTransCallBack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheJdbcExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-555">
+          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/CacheLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="102" column="28" selection-start-line="102" selection-start-column="28" selection-end-line="102" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/extractor/BaseJdbcExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-601">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/LockItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/AccessType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/ThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="158" column="13" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/Cache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheRegionAccessStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheReadWriteCollectionRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheReadWriteCollectionRegionAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheReadWriteRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/AbstractReadWriteCacheRegionAccessStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+            <element signature="e#1989#1990#0" expanded="true" />
+            <element signature="e#2507#2508#0" expanded="true" />
+            <element signature="e#2537#2538#0" expanded="true" />
+            <element signature="e#2580#2581#0" expanded="true" />
+            <element signature="e#2612#2613#0" expanded="true" />
+            <element signature="e#2651#2652#0" expanded="true" />
+            <element signature="e#2687#2688#0" expanded="true" />
+            <element signature="e#2751#2752#0" expanded="true" />
+            <element signature="e#2780#2781#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/redis/RedisCacheReadWriteRegionAccessStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.4.3/ehcache-core-2.4.3.jar!/net/sf/ehcache/CacheManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/log/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="81" column="11" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheStatistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="136" column="13" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4388#4389#0" expanded="true" />
+            <element signature="e#4469#4470#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheReadWriteRegionAccessStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheReadWriteRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhcacheManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/AbstractEhCacheReadWriteRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1245">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1496#1497#0" expanded="true" />
+            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="e#1725#1726#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+            <element signature="e#1805#1806#0" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1922#1923#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#1992#1993#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhcacheReadWriteCollectionRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/session/DefaultJdbcSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#19977#19978#0" expanded="true" />
+            <element signature="e#20036#20037#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/CacheManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="307" column="8" lean-forward="true" selection-start-line="307" selection-start-column="8" selection-end-line="307" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4136#4137#0" expanded="true" />
+            <element signature="e#4164#4165#0" expanded="true" />
+            <element signature="e#4296#4297#0" expanded="true" />
+            <element signature="e#4329#4330#0" expanded="true" />
+            <element signature="e#7124#7125#0" expanded="true" />
+            <element signature="e#7183#7184#0" expanded="true" />
+            <element signature="e#7246#7247#0" expanded="true" />
+            <element signature="e#7297#7298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/cache/ehcache/EhCacheFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/XML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#XMLNode#0;class#XML#0" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#2649#2650#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/Scans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="132" column="120" selection-start-line="132" selection-start-column="120" selection-end-line="132" selection-end-column="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/common/util/MessageFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/transaction/TransactionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/log/TransLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1679">
+          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#538#695#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/log/TransLoggerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/log/AbstractLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#1975#1976#0" expanded="true" />
+            <element signature="e#2002#2003#0" expanded="true" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#2178#2179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/orm/JdbcFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/reign/framework/jdbc/AbstractJdbcExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="178" column="35" selection-start-line="178" selection-start-column="35" selection-end-line="178" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Bundled Protobuf Distribution</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -434,6 +1015,19 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>main</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -448,6 +1042,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: asm:asm:3.3.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

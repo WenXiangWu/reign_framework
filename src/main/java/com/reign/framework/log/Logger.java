@@ -78,4 +78,6 @@ public interface Logger {
     Throwable getOriginThtowable(Throwable t);
 
     boolean isLogEnabled(LogLevel logLevel);
+
+    boolean isWarnEnabled();
 }

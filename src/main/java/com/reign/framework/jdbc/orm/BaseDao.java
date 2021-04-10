@@ -3,10 +3,15 @@ package com.reign.framework.jdbc.orm;
 import com.reign.framework.jdbc.Param;
 import com.reign.framework.jdbc.Params;
 import com.reign.framework.jdbc.ResultSetHandler;
+import com.reign.framework.jdbc.SqlFactory;
+import com.reign.framework.jdbc.handlers.BeanHandler;
+import com.reign.framework.jdbc.handlers.BeanListHandler;
 import com.reign.framework.jdbc.handlers.ColumnListHandler;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;
+import java.lang.reflect.ParameterizedType;
 import java.util.List;
 import java.util.Map;
 
@@ -16,7 +21,7 @@ import java.util.Map;
  * @Author: wuwx
  * @Date: 2021-04-02 16:36
  **/
-public class BaseDao<T extends JdbcModel,PK extends Serializable> implements IBaseDao<T,PK>, InitializingBean {
+public class BaseDao<T extends JdbcModel, PK extends Serializable> implements IBaseDao<T, PK>, InitializingBean {
 
     //当前类型
     private Class<T> clazz;
@@ -31,9 +36,33 @@ public class BaseDao<T extends JdbcModel,PK extends Serializable> implements IBa
     //mapHandler
     protected ColumnListHandler columnListHandler;
 
+    @Autowired
+    protected JdbcFactory jdbcFactory;
+
+    @Autowired
+    protected JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    protected SqlFactory sqlFactory;
+
+    public BaseDao() {
+
+        try {
+            clazz = (Class<T>) ((ParameterizedType) this.getClass().getGenericSuperclass()).getActualTypeArguments()[0];
+        } catch (Exception e) {
+            clazz = (Class<T>) this.getClass().getGenericSuperclass();
+        }
+
+    }
 
     public void afterPropertiesSet() throws Exception {
-
+        if (null == jdbcFactory) {
+            return;
+        }
+        entity = jdbcFactory.getJdbcEntity(clazz);
+        handler = new BeanHandler<>(clazz);
+        listHandler = new BeanListHandler<>(clazz);
+        columnListHandler = new ColumnListHandler(1);
     }
 
     public void create(T newInstance) {
