@@ -147,11 +147,11 @@ public class BaseDao<T extends JdbcModel, PK extends Serializable> implements IB
     }
 
     public void batch(String sql, List<List<Param>> paramList) {
-
+        jdbcTemplate.batch(sql, paramList, entity, ALL_QUERY_CACHE);
     }
 
     public void batch(String sql, List<List<Param>> paramList, String... keys) {
-
+        jdbcTemplate.batch(sql, paramList, entity, keys);
     }
 
     public List<Map<String, Object>> query(String sql, List<Param> paramList) {
@@ -160,5 +160,21 @@ public class BaseDao<T extends JdbcModel, PK extends Serializable> implements IB
 
     public <E> E query(String sql, List<Param> params, ResultSetHandler<E> handler) {
         return null;
+    }
+
+    /**
+     * 构建查询缓存key
+     *
+     * @param sql
+     * @param params
+     * @return
+     */
+    protected final String builderSelectKey(String sql, List<Param> params) {
+        StringBuilder builder = new StringBuilder();
+        builder.append(sql).append("::");
+        for (Param param : params) {
+            builder.append(param.obj.toString()).append(",");
+        }
+        return builder.toString();
     }
 }
