@@ -60,7 +60,7 @@ public interface BaseJdbcExtractor extends JdbcExtractor {
 
     <PK> void delete(final PK id, final JdbcEntity entity);
 
-    <T> List<T> query(final String selectKey, final String sql, final List<Param> params, final JdbcEntity entity, final ResultSetHandler<T> handler);
+    <T> List<T> query(final String selectKey, final String sql, final List<Param> params, final JdbcEntity entity, final ResultSetHandler<List<T>> handler);
 
     <PK> int update(final String sql, final List<Param> params, final JdbcEntity entity, final PK pk, final String... keys);
 
@@ -75,7 +75,7 @@ public interface BaseJdbcExtractor extends JdbcExtractor {
      * @param <PK>
      * @return
      */
-    <PK> int updateDelay(final String sql, final List<Param> params, final JdbcEntity entity, final PK pk, final String... keys);
+    <PK> void updateDelay(final String sql, final List<Param> params, final JdbcEntity entity, final PK pk, final String... keys);
 
 
     /**
@@ -86,7 +86,7 @@ public interface BaseJdbcExtractor extends JdbcExtractor {
      * @param entity
      * @param keys
      */
-    void batch(final String sql, final List<Param> params, final JdbcEntity entity, final String... keys);
+    void batch(final String sql, final List<List<Param>> params, final JdbcEntity entity, final String... keys);
 
 
     <T> T query(String sql, List<Param> params, final JdbcEntity entity, final ResultSetHandler<T> handler);

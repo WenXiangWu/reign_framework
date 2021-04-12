@@ -590,7 +590,7 @@ public class DefaultJdbcSession implements JdbcSession, TransactionListener {
     }
 
     @Override
-    public <T> List<T> query(String selectKey, String sql, List<Param> params, JdbcEntity entity, ResultSetHandler<T> handler) {
+    public <T> List<T> query(String selectKey, String sql, List<Param> params, JdbcEntity entity, ResultSetHandler<List<T>> handler) {
         //检查是否要触发触发器
         checkTrigger(entity);
 
@@ -625,7 +625,7 @@ public class DefaultJdbcSession implements JdbcSession, TransactionListener {
     }
 
     @Override
-    public <PK> int updateDelay(String sql, List<Param> params, JdbcEntity entity, PK pk, String... keys) {
+    public <PK> void updateDelay(String sql, List<Param> params, JdbcEntity entity, PK pk, String... keys) {
         //添加触发器
         addTrigger(entity.getTableName(), JdbcSessionTrigger.UPDATE, !hasTransaction, entity, new JdbcSessionTrigger() {
             @Override
@@ -646,13 +646,20 @@ public class DefaultJdbcSession implements JdbcSession, TransactionListener {
             }
         });
 
-        return 0;
     }
 
     @Override
-    public void batch(String sql, List<Param> params, JdbcEntity entity, String... keys) {
-
+    public void batch(String sql, List<List<Param>> params, JdbcEntity entity, String... keys) {
+        //触发所有触发器
+        triggerNow();
+        jdbcExtractor.batch(sql,params,entity,keys);
+        //禁用查询缓存
+        entity.getCacheManger().disableQueryCache();;
+        //禁用二级缓存
+        entity.getCacheManger().disableObjCache();
+        addToEntitySet(entity);
     }
+
 
     @Override
     public <T> T query(String sql, List<Param> params, JdbcEntity entity, ResultSetHandler<T> handler) {
@@ -723,21 +730,24 @@ public class DefaultJdbcSession implements JdbcSession, TransactionListener {
 
     @Override
     public void batch(String sql, List<List<Param>> paramList) {
+        throw new UnsupportedOperationException();
 
     }
 
     @Override
     public void batch(String sql, List<List<Param>> paramList, int batchSize) {
+        throw new UnsupportedOperationException();
 
     }
 
     @Override
     public void batch(List<String> sqlList) {
-
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public void batch(List<String> sqlList, int batchSize) {
+        throw new UnsupportedOperationException();
 
     }
 }

@@ -216,7 +216,7 @@ public class CacheManager {
     /**
      * 禁用查询缓存
      */
-    public final void diableQueryCache() {
+    public final void disableQueryCache() {
         if (useQueryCache) {
             queryCacheEnable.set(false);
         }
@@ -414,4 +414,5 @@ public class CacheManager {
         }
         return null;
     }
+
 }

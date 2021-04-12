@@ -1,0 +1,4 @@
+剩余baseDao
+AbstractJdbcExtractor报错
+
+jdbc完成

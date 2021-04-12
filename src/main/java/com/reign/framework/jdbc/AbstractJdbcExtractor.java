@@ -2,6 +2,7 @@ package com.reign.framework.jdbc;
 
 import com.reign.framework.jdbc.handlers.MapListHandler;
 import com.reign.framework.log.InternalLoggerFactory;
+import com.reign.framework.log.LogLevel;
 import com.reign.framework.log.LogMonitor;
 import com.reign.framework.log.Logger;
 import org.springframework.beans.factory.InitializingBean;
@@ -9,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.datasource.DataSourceUtils;
+import org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator;
 import org.springframework.jdbc.support.SQLExceptionTranslator;
 import org.springframework.jdbc.support.SQLStateSQLExceptionTranslator;
 
@@ -75,9 +77,21 @@ public abstract class AbstractJdbcExtractor implements JdbcExtractor, Initializi
         afterPropertiesSet();
     }
 
+    public AbstractJdbcExtractor() {
+        //配置日志监控
+        LogMonitor.getInstance().config(LogMonitor.MKEY_JDBCSQL, -1, LogLevel.INFO, 60 * 1000 * 10);
+    }
+
 
     private synchronized void initSQLExceptionTranslator() {
+        if (translator == null) {
+            if (dataSource != null) {
+                this.translator = new SQLErrorCodeSQLExceptionTranslator(dataSource);
+            } else {
+                this.translator = new SQLStateSQLExceptionTranslator();
+            }
 
+        }
     }
 
     public void afterPropertiesSet() throws Exception {
@@ -86,6 +100,7 @@ public abstract class AbstractJdbcExtractor implements JdbcExtractor, Initializi
 
     /**
      * 从数据库连接池中获取连接
+     *
      * @return
      * @throws SQLException
      */
@@ -93,8 +108,20 @@ public abstract class AbstractJdbcExtractor implements JdbcExtractor, Initializi
         return DataSourceUtils.getConnection(dataSource);
     }
 
+    public DataSource getDataSource() {
+        return dataSource;
+    }
+
+    public int getFetchSize() {
+        return fetchSize;
+    }
+
+    public int getMaxRows() {
+        return maxRows;
+    }
+
     protected void releaseConnection(Connection connection) {
-        DataSourceUtils.releaseConnection(connection,dataSource);
+        DataSourceUtils.releaseConnection(connection, dataSource);
     }
 
     @Override
@@ -129,7 +156,7 @@ public abstract class AbstractJdbcExtractor implements JdbcExtractor, Initializi
             }
 
         } catch (SQLException e) {
-            DataAccessException dat = translator.translate("execute batch sql error,msg::" + e.toString(),"",e);
+            DataAccessException dat = translator.translate("execute batch sql error,msg::" + e.toString(), "", e);
             throw dat;
         } finally {
             DbUtils.closeQuietly(stmt, rs);
@@ -295,9 +322,45 @@ public abstract class AbstractJdbcExtractor implements JdbcExtractor, Initializi
     }
 
 
+    /**
+     * 设置jdbc参数
+     *
+     * @param stme
+     * @throws SQLException
+     */
     protected void applyStatementSettings(Statement stme) throws SQLException {
+        if (this.fetchSize > 0) {
+            stme.setFetchSize(this.fetchSize);
+        }
+        if (this.maxRows > 0) {
+            stme.setMaxFieldSize(this.maxRows);
+        }
     }
 
+    /**
+     * 执行batch操作
+     * @param stme
+     * @param batchSize
+     * @throws SQLException
+     */
     private void doExecuteBatch(Statement stme, int batchSize) throws SQLException {
+        int[] result = stme.executeBatch();
+        //检查batch执行结果
+        if (batchSize!=result.length){
+            throw new RuntimeException("batch error,excepted batch result len:"+batchSize+",bat jdbc return len:"+result.length);
+        }
+
+        /**
+         * 检查batch结果
+         * -2：表示执行成功，但是影响行数未知
+         * -3:表示执行失败，但是驱动在执行错误之后继续执行了后续batch命令
+         * 0 or >0 返回影响的行数
+         */
+        for (int i:result){
+            if (i==-3){
+                throw new RuntimeException("batch update failed:"+i);
+            }
+        }
+
     }
 }

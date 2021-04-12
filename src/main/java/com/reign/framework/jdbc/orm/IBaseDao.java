@@ -3,6 +3,7 @@ package com.reign.framework.jdbc.orm;
 import com.reign.framework.jdbc.Param;
 import com.reign.framework.jdbc.Params;
 import com.reign.framework.jdbc.ResultSetHandler;
+import com.reign.framework.jdbc.orm.page.PagingData;
 
 import java.io.Serializable;
 import java.util.List;
@@ -15,6 +16,9 @@ import java.util.Map;
  * @Date: 2021-04-02 14:50
  **/
 public interface IBaseDao<T extends JdbcModel,PK extends Serializable> {
+
+    static final String ALL_QUERY_CACHE = "all";
+
 
     /**
      * 创建新的实例，该方法会清除所有查询缓存
@@ -94,7 +98,7 @@ public interface IBaseDao<T extends JdbcModel,PK extends Serializable> {
      * 获取表大小
      * @return
      */
-    int getModelSize();
+    Long getModelSize();
 
     /**
      * 根据SQL查出结果集，返回第一条结果
@@ -114,6 +118,9 @@ public interface IBaseDao<T extends JdbcModel,PK extends Serializable> {
 
     List<T> getResultByHQLAndParam(String sql,Params params);
 
+    List<T> getResultByHQLAndParam(String sql, PagingData pagingData,Params params);
+
+    List<Map<String,Object>> query(String sql,PagingData page,Params params);
     /**
      * 更新操作，此方法默认可以被延迟执行
      * 注意此方法会清除所有二级缓存和查询缓存；
@@ -150,7 +157,7 @@ public interface IBaseDao<T extends JdbcModel,PK extends Serializable> {
      * @param pk
      * @param keys
      */
-    void update(String sql,Params params,boolean canDelay,PK pk,String... keys);
+    int update(String sql,Params params,boolean canDelay,PK pk,String... keys);
 
     /**
      * 求总和
@@ -189,6 +196,5 @@ public interface IBaseDao<T extends JdbcModel,PK extends Serializable> {
      */
     <E> E query(String sql, List<Param> params, ResultSetHandler<E> handler);
 
-    static final String ALL_QUERY_CACHE = "all";
 
 }

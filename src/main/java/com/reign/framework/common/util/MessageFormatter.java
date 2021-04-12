@@ -8,5 +8,6 @@ package com.reign.framework.common.util;
  **/
 public class MessageFormatter {
     public static String format(String toString, String tableName) {
+        return null;
     }
 }

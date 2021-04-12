@@ -87,10 +87,9 @@ public class CacheLoader {
      *
      * @param entity
      * @param key
-     * @param values
      */
-    public static final void getFromQueryCache(JdbcEntity entity, String key, String[] values) {
-        entity.getCacheManger().getFromQueryCache(key);
+    public static final String[]  getFromQueryCache(JdbcEntity entity, String key) {
+        return entity.getCacheManger().getFromQueryCache(key);
     }
 
     /**
@@ -113,8 +112,8 @@ public class CacheLoader {
      * @param lock
      * @return
      */
-    public static final LockItem<Object> unLockItem(JdbcEntity entity, String key, LockItem<Object> lock) {
-        return entity.getCacheManger().unLockItem(key, lock);
+    public static final boolean unLockItem(JdbcEntity entity, String key, LockItem<Object> lock) {
+        return entity.getCacheManger().unlockItem(key, lock);
     }
 
 

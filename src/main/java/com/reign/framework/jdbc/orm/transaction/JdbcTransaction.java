@@ -89,7 +89,7 @@ public class JdbcTransaction implements Transaction {
 
         //开始事务提交
         jdbcSession.beforeCommit(this, true);
-        jdbcFactory.notifyTransactionBegin(this, true);
+        jdbcFactory.notifyTransactionBeforeCommit(this, true);
 
         try {
             if (log.isDebugEnabled()) {

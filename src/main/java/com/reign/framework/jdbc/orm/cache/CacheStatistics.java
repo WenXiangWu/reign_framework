@@ -115,13 +115,13 @@ public final class CacheStatistics {
         getTableStats(tableName).addMiss();
     }
 
-    public final void addQueryHits(String tableName) {
+    public static final void addQueryHits(String tableName) {
         if (!enable) return;
         getTableStats(tableName).addQueryHits();
     }
 
 
-    public final void addQueryMiss(String tableName) {
+    public static final void addQueryMiss(String tableName) {
         if (!enable) return;
         getTableStats(tableName).addQueryMiss();
     }

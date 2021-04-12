@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/reign_framework.iml" filepath="$PROJECT_DIR$/reign_framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../reign_framework_tcp_netty4/reign_framework_tcp_netty4.iml" filepath="$PROJECT_DIR$/../reign_framework_tcp_netty4/reign_framework_tcp_netty4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../reign_module/reign_module.iml" filepath="$PROJECT_DIR$/../reign_module/reign_module.iml" />
     </modules>
   </component>
 </project>
