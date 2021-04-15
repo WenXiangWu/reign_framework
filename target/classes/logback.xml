@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="30 seconds" debug="false">
+    <property name="common-log" value="${start.home}/logs/zzsf2/common/comm"/>
+    <property name="error-log" value="${start.home}/logs/zzsf2/common/error"/>
+    <property name="dayreport-log" value="${start.home}/logs/zzsf2/common/dayreport"/>
+    <property name="rtreport-log" value="${start.home}/logs/zzsf2/common/rtreport"/>
+    <property name="asynchronousDBOperation-log" value="${start.home}/logs/zzsf2/common/asynchronousDBOperation"/>
+
+    <conversionRule conversionWork="p" converterClass="com.reign.framework.log.LevelConverter"/>
+
+    <!--日常日志-->
+    <appender name="dayreport-log" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Append>true</Append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss,S}#%msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${dayreport-log}_%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+    <!--异步db日志-->
+    <appender name="asynchronousDBOperation-log" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Append>true</Append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss,S}#%msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${asynchronousDBOperation-log}_%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+
+    <appender name="rtreport-log" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Append>true</Append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss,S}#%msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${rtreport-log}_%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+
+    <appender name="error-log" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Append>true</Append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss,S}#%msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${error-log}_%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+
+    <appender name="R" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Append>true</Append>
+        <File>#{common-log}</File>
+        <encoder>
+            <pattern>[Reign]%d{yyyy-MM-dd HH:mm:ss,S} [%c]-[%p] %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <MaxIndex>20</MaxIndex>
+            <FileNamePattern>${common-log}.%i</FileNamePattern>>
+            <FileNamePattern>${error-log}_%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+        <triggerPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>50MB</MaxFileSize>
+        </triggerPolicy>
+    </appender>
+
+
+
+</configuration>

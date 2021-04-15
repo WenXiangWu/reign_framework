@@ -14,6 +14,13 @@ public interface Logger {
     //是否可以输出Trace级别的日志
     boolean isTraceEnabled();
 
+    boolean isInfoEnabled();
+
+    boolean isErrorEnabled();
+
+    boolean isFatalEnabled();
+
+
     //输出trace级别的日志
     void trace(String msg);
 
@@ -26,31 +33,33 @@ public interface Logger {
     //是否可以输出Debug级别的日志
     boolean isDebugEnabled();
 
-    //TODO 输出各种级别的日志，包含trace，debug，fatal，error，warn,info
-
     void error(String msg);
 
-    void error(String format, Throwable t);
+    void error(String msg, Throwable t);
 
     void error(String format, Object... arg);
 
+    void error(String format,Throwable t,Object... arg);
+
     void info(String msg);
 
-    void info(String format, Throwable t);
+    void info(String msg, Throwable t);
 
     void info(String format, Object... arg);
 
 
     void fatal(String msg);
 
-    void fatal(String format, Throwable t);
+    void fatal(String msg, Throwable t);
 
     void fatal(String format, Object... arg);
+
+    void fatal(String format,Throwable t,Object... arg);
 
 
     void warn(String msg);
 
-    void warn(String format, Throwable t);
+    void warn(String msg, Throwable t);
 
     void warn(String format, Object... arg);
 
@@ -69,7 +78,7 @@ public interface Logger {
      */
     void log(LogLevel level, String format, Object... args);
 
-    void log(LogLevel level, String format, Throwable t);
+    void log(LogLevel level, String msg, Throwable t);
 
     void log(LogLevel level, String msg);
 

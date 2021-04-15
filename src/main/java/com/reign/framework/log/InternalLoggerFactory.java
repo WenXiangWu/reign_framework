@@ -20,17 +20,43 @@ public abstract class InternalLoggerFactory {
     static {
         final String name = InternalLoggerFactory.class.getName();
         InternalLoggerFactory f;
-//        try {
-//            f = new Slf4JLoggerFactory();
-//
-//        }
+        try {
+            f = new Slf4JLoggerFactory();
+            f.createLogger(name).debug("Using SLF4J as the default logging framework");
+            defaultFactory = f;
+        } catch (Throwable t) {
+            throw new RuntimeException("SLF4J not found ,logger init error", t);
+        }
+
+        //设置默认日志工厂类
+        defaultFactory = f;
+        //设置错误日志
+        setErrorLogger("com.reign.error");
 
 
     }
 
-    //创建日志
-    public static Logger getLogger(String s) {
-        return null;
+    /**
+     * 设置指定的错误日志
+     *
+     * @param name
+     */
+    public static void setErrorLogger(String name) {
+        errorLog = getDefaultFactory().createErrorLogger(name);
+    }
+
+    public static InternalLoggerFactory getDefaultFactory() {
+        return defaultFactory;
+    }
+
+    /**
+     * 根据类名创建一个指定的logger
+     *
+     * @param name
+     * @return
+     */
+    public static Logger getLogger(String name) {
+        return getLogger(name, true);
     }
 
 
@@ -43,14 +69,16 @@ public abstract class InternalLoggerFactory {
     }
 
     public static Logger getLogger(String name, boolean redirectError) {
-
         return getDefaultFactory().createLogger(name, redirectError);
     }
 
-    public abstract Logger createLogger(String name, boolean redirectError);
-
-    private static InternalLoggerFactory getDefaultFactory() {
-        return defaultFactory;
+    protected Logger createLogger(String name) {
+        return createLogger(name, true);
     }
+
+    protected abstract Logger createLogger(String name, boolean redirectError);
+
+    protected abstract Logger createErrorLogger(String name);
+
 
 }
