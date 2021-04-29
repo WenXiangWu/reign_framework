@@ -17,7 +17,7 @@ public abstract class AbstractWrapper implements Wrapper {
     /**
      * 是否开启压缩
      */
-    private boolean compress;
+    protected boolean compress;
 
 
     public AbstractWrapper(boolean compress) {

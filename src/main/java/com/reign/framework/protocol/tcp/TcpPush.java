@@ -3,7 +3,7 @@ package com.reign.framework.protocol.tcp;
 import com.reign.framework.common.ServerProtocol;
 import com.reign.framework.core.servlet.Push;
 import com.reign.framework.core.servlet.Session;
-import com.reign.framework.core.servlet.util.WrapperUtil;
+import com.reign.framework.core.util.WrapperUtil;
 import io.netty.channel.Channel;
 import io.netty.util.ReferenceCountUtil;
 

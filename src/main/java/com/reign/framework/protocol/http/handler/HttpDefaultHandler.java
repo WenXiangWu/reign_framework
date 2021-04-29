@@ -109,7 +109,7 @@ public class HttpDefaultHandler extends ChannelInboundHandlerAdapter {
                 Map<String,String> headers = HttpUtil.getHeaders(httpRequest);
                 //解析消息
                 final Response response = new HttpRespone(ctx.channel());
-                final Request request = new com.reign.framework.protocol.http.HttpRequest(ctx,ctx.channel(),httpRequest,requestContent.left,requestContent.right,command,cookieMap,headers,response,uri);
+                final Request request = new com.reign.framework.protocol.http.HttpRequest(ctx,sc,ctx.channel(),httpRequest,requestContent.left,requestContent.right,command,cookieMap,headers,response,uri);
 
                 if (!request.isHttpLong()){
                     servlet.service(request,response);

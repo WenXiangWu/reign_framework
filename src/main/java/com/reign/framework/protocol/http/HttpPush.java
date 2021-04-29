@@ -3,7 +3,7 @@ package com.reign.framework.protocol.http;
 import com.reign.framework.common.ServerProtocol;
 import com.reign.framework.core.servlet.Push;
 import com.reign.framework.core.servlet.Session;
-import com.reign.framework.core.servlet.util.WrapperUtil;
+import com.reign.framework.core.util.WrapperUtil;
 import com.reign.framework.protocol.http.handler.ChunkAction;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;

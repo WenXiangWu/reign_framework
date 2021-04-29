@@ -1,6 +1,6 @@
 package com.reign.framework.core.servlet;
 
-import com.reign.framework.core.exception.SevletConfigException;
+import com.reign.framework.exception.SevletConfigException;
 import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -244,7 +244,7 @@ public class XmlConfig {
                     String elementName = element.getNodeName();
                     if (secondName.equalsIgnoreCase(elementName)) {
                         NodeList propsList = element.getChildNodes();
-                        for (int j = 0; i < propsList.getLength(); j++) {
+                        for (int j = 0; j < propsList.getLength(); j++) {
                             Node propsNode = propsList.item(j);
                             if (propsNode instanceof Element) {
                                 Element propsElement = (Element) propsNode;

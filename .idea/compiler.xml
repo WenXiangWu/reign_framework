@@ -9,8 +9,5 @@
         <module name="reign_framework" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="reign_framework" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -3,7 +3,7 @@ package com.reign.framework.protocol.util;
 import com.reign.framework.common.util.Tuple;
 import com.reign.framework.core.servlet.Request;
 import com.reign.framework.core.servlet.Response;
-import com.reign.framework.core.servlet.util.WrapperUtil;
+import com.reign.framework.core.util.WrapperUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.PooledByteBufAllocator;
 import io.netty.channel.Channel;

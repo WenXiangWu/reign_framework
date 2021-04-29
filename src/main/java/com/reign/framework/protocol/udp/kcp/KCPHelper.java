@@ -122,6 +122,12 @@ public class KCPHelper {
         return _imin_(_imax_(lower, middle), upper);
     }
 
+    /**
+     * 比较包编号大小，true表示 左边比右边编号大，false反之
+     * @param later
+     * @param earlier
+     * @return
+     */
     public static int _itimediff(long later, long earlier) {
         return ((int) (later - earlier));
     }

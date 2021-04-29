@@ -65,4 +65,8 @@ public class SessionManager {
 
     public void access(String sessionId) {
     }
+
+    public Session getSession(String sessionId) {
+        return null;
+    }
 }

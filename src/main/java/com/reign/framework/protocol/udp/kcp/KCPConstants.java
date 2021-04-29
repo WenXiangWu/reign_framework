@@ -12,17 +12,24 @@ public class KCPConstants {
     public static final int IKCP_RTO_NDL = 30; //no delay min rto
     public static final int IKCP_RTO_MIN = 100; // normal min rto
     public static final int IKCP_RTO_DEF = 200;
+    //最大的重试时间
     public static final int IKCP_RTO_MAX = 60000;
 
-    /***---------------------KCP指令---------------------*/
-    public static final int IKCP_CMD_PUSH = 81; // cmd:push date
-    public static final int IKCP_CMD_ACK = 82; //cmd: ack
-    public static final int IKCP_CMD_WASK = 83; //cmd: window probe (ask)
-    public static final int IKCP_CMD_WINS = 84; //cmd:window size (tell)
+    /***---------------------KCP命令类型，只有四种---------------------*/
+    //传输的数据包
+    public static final int IKCP_CMD_PUSH = 81;
+    //ACK包，类似于 TCP中的 ACK，通知对⽅收到了哪些包
+    public static final int IKCP_CMD_ACK = 82;
+    //⽤来探测远端窗⼝⼤⼩
+    public static final int IKCP_CMD_WASK = 83;
+    //告诉对⽅⾃⼰窗⼝⼤⼩
+    public static final int IKCP_CMD_WINS = 84;
 
 
-    public static final int IKCP_ASK_SEND = 1; //need to send IKCP_CMD_WASK
-    public static final int IKCP_ASK_TELL = 2; //need to send IKCP_CMD_WINS
+    //询问对端我的窗口大小
+    public static final int IKCP_ASK_SEND = 1;
+    //告诉对面我的窗口大小
+    public static final int IKCP_ASK_TELL = 2;
     public static final int IKCP_ASK_PAST = 3;
 
     /***---------------------滑动窗口参数---------------------*/

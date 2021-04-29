@@ -1,6 +1,6 @@
 package com.reign.framework.protocol.util;
 
-import com.reign.framework.core.servlet.util.Utils;
+import com.reign.framework.core.util.Utils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Map;

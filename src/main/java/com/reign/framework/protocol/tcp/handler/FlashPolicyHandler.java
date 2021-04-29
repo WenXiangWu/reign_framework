@@ -1,7 +1,7 @@
 package com.reign.framework.protocol.tcp.handler;
 
 import com.reign.framework.common.ServerConstants;
-import com.reign.framework.core.servlet.util.WrapperUtil;
+import com.reign.framework.core.util.WrapperUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<conf>
+    <servlet>
+        <servlet-name>mvc</servlet-name>
+        <servlet-class></servlet-class>
+        <init-param>
+            <props>
+                <property name="actionPackage" type="string">com.reign</property>
+                <!--单位:分钟，session超时时间-->
+                <property name="sessionTimeOut" type="int">1</property>
+                <!--单位:秒，session超时检测周期，如果是长连接，则会给前端推送一个无意义的数据包，保持连接-->
+                <property name="sessionTickTime" type="int">25</property>
+                <!--单位：分钟，session过期时间-->
+                <property name="sessionInvalidate" type="int">1440</property>
+                <!--是否启用压缩-->
+                <property name="compress" type="boolean">false</property>
+                <!--推送通道最大保留历史消息数量-->
+                <property name="historyMsgLen" type="int">100</property>
+            </props>
+        </init-param>
+    </servlet>
+
+
+    <netty>
+        <init-param>
+            <props>
+                <property name="tcpHandler" type="string">com.reign.framework.protocol.tcp.handler.TcpDefaultHandler</property>
+                <property name="port" type="int">5566</property>
+                <property name="httpMaxThreads" type="int">10</property>
+                <property name="maxThreads" type="int">200</property>
+                <property name="bossThreads" type="int">10</property>
+                <property name="ioThreads" type="int">10</property>
+                <property name="countPerChannel" type="int">10</property>
+                <property name="httpPort" type="int">5577</property>
+            </props>
+        </init-param>
+
+        <tcp-param>
+            <props>
+                <property name="tcpnoDelay" type="boolean">true</property>
+                <property name="keepAlive" type="boolean">true</property>
+            </props>
+        </tcp-param>
+    </netty>
+
+    <!--<listener>-->
+        <!--<listener-class></listener-class>-->
+    <!--</listener>-->
+
+</conf>

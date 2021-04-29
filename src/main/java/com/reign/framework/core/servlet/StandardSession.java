@@ -3,7 +3,7 @@ package com.reign.framework.core.servlet;
 import com.alibaba.fastjson.JSON;
 import com.reign.framework.common.ListenerConstants;
 import com.reign.framework.common.util.Tuple;
-import com.reign.framework.core.servlet.util.WrapperUtil;
+import com.reign.framework.core.util.WrapperUtil;
 import com.reign.framework.jdbc.orm.BinaryModel;
 import com.reign.framework.util.ChannelBuffers;
 import com.reign.framework.util.DateUtil;
@@ -248,6 +248,7 @@ public class StandardSession implements Session, BinaryModel {
         if (null != msgList && msgList.size() > 0) {
             synchronized (lock) {
                 for (Tuple<String, Object> obj : msgList) {
+                    //积攒的内容写回去
                     if (obj.left != null) {
                         push.push(this, obj.left, (byte[]) obj.right);
                     } else {

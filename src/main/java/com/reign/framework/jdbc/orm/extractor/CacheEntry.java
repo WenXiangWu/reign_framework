@@ -1,9 +1,7 @@
 package com.reign.framework.jdbc.orm.extractor;
 
-import com.reign.framework.common.ObjectFactory;
 import com.reign.framework.common.util.ReflectUtil;
 import com.reign.framework.jdbc.orm.JdbcEntity;
-import com.reign.framework.jdbc.orm.JdbcFactory;
 import com.reign.framework.jdbc.orm.JdbcField;
 import com.reign.framework.jdbc.orm.util.JdbcUtil;
 import com.reign.framework.log.InternalLoggerFactory;

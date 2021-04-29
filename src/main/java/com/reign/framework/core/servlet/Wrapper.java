@@ -120,4 +120,9 @@ public interface Wrapper {
      * @return
      */
     Object getByteBufAllocator();
+
+
+    Object wrapperPush(String command,long playerId,byte[] body);
+
+    Object wrapperSocket(String command,int requestId,byte[] body);
 }

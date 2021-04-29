@@ -1,7 +1,7 @@
 package com.reign.framework.jdbc.orm;
 
 import com.reign.framework.common.Lang;
-import com.reign.framework.common.util.Scans;
+import com.reign.framework.core.util.Scans;
 import com.reign.framework.common.util.XML;
 import com.reign.framework.jdbc.DefaultNameStrategy;
 import com.reign.framework.jdbc.orm.cache.CacheConfig;

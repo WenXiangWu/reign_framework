@@ -1,7 +1,7 @@
 package com.reign.framework.protocol.http.handler;
 
 
-import com.reign.framework.core.servlet.util.WrapperUtil;
+import com.reign.framework.core.util.WrapperUtil;
 import com.reign.framework.protocol.util.HttpUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

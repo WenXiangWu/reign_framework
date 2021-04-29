@@ -8,9 +8,7 @@ package com.reign.framework.core.servlet;
  **/
 public class SessionAttributeEvent extends SessionEvent {
 
-    public SessionAttributeEvent(Session session) {
-        super(session);
-    }
+
     public String key;
 
     public Object value;
